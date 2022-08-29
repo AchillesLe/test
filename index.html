@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test</title>
+</head>
+<body>
+	<h1>hello</h1>
+	<div id="payment"></div>
+	<button onclick="openWindow()">click me</button>
+</body>
+<script type="text/javascript">
+	function openWindow() {
+		var win = window.open("", "Title", "toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,top=100, left=200, height=400, width=780");
+
+    var client = new XMLHttpRequest();
+		client.open('GET', 'http://127.0.0.1:5500/payment.html');
+		client.onreadystatechange = function() {
+		  win.document.write(client.responseText)
+		}
+		client.send();
+		
+	}
+
+	function openPayment() {
+    // const paymentDiv = document.getElementById('payment')
+    // console.log(paymentDiv)
+    // paymentDiv.innerHTML = '<object type="text/html" data="http://127.0.0.1:5500/payment.html" ></object>'
+		// var client = new XMLHttpRequest();
+		// client.open('GET', 'http://127.0.0.1:5500/payment.html');
+		// client.onreadystatechange = function() {
+		//   paymentDiv.innerHTML = client.responseText
+		// }
+		// client.send();
+	}
+</script>
+</html>

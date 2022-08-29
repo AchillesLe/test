@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function feppost_20220225115544() {
+                var connectUrl = 'https://jsonplaceholder.typicode.com/todos';
+                var form = $('<form></form>', {action:connectUrl, method:'POST', 'accept-charset':'Shift_JIS'}).hide();
+                var body = $('body');
+                body.append(form);
+                form.append($('<input>', {type:'hidden', name:'pay_method', value:'credit3d'}));
+form.append($('<input>', {type:'hidden', name:'merchant_id', value:'73097'}));
+form.append($('<input>', {type:'hidden', name:'service_id', value:'1'}));
+form.append($('<input>', {type:'hidden', name:'cust_code', value:'53044e05'}));
+form.append($('<input>', {type:'hidden', name:'sps_cust_no', value:''}));
+form.append($('<input>', {type:'hidden', name:'sps_payment_no', value:''}));
+form.append($('<input>', {type:'hidden', name:'order_id', value:'53044e05-62184530'}));
+form.append($('<input>', {type:'hidden', name:'item_id', value:'ETA Application Fee'}));
+form.append($('<input>', {type:'hidden', name:'pay_item_id', value:''}));
+form.append($('<input>', {type:'hidden', name:'item_name', value:''}));
+form.append($('<input>', {type:'hidden', name:'tax', value:''}));
+form.append($('<input>', {type:'hidden', name:'amount', value:'100'}));
+form.append($('<input>', {type:'hidden', name:'pay_type', value:'0'}));
+form.append($('<input>', {type:'hidden', name:'auto_charge_type', value:''}));
+form.append($('<input>', {type:'hidden', name:'service_type', value:'0'}));
+form.append($('<input>', {type:'hidden', name:'div_settele', value:''}));
+form.append($('<input>', {type:'hidden', name:'last_charge_month', value:''}));
+form.append($('<input>', {type:'hidden', name:'camp_type', value:''}));
+form.append($('<input>', {type:'hidden', name:'tracking_id', value:''}));
+form.append($('<input>', {type:'hidden', name:'terminal_type', value:''}));
+form.append($('<input>', {type:'hidden', name:'success_url', value:''}));
+form.append($('<input>', {type:'hidden', name:'cancel_url', value:''}));
+form.append($('<input>', {type:'hidden', name:'error_url', value:''}));
+form.append($('<input>', {type:'hidden', name:'pagecon_url', value:''}));
+form.append($('<input>', {type:'hidden', name:'free1', value:''}));
+form.append($('<input>', {type:'hidden', name:'free2', value:''}));
+form.append($('<input>', {type:'hidden', name:'free3', value:''}));
+form.append($('<input>', {type:'hidden', name:'free_csv', value:'+fBa+Z7aPXgHKy8jM1aAR16ii8sVMf2wQ6ZQNIjJodJeMq0MlIm0mwQChAjcQurRKiY5t6EJBc9x8mDD8jrOkvczYjU4y0gjPUZXCxFgKbE0huG39gkvQyTy6brKELbxSwPE4et6LX4x3lezhzDA3hR62ptpmF4bvfKzTs3XMJodhmKFB/GMIrWCGJyV+90et+kkvkakJWRe706jpfeR7IcoPpMDEfLU/dwkOxXuXdFL5KxGi6KRkDi4a0e4+iduRIKWEltiXzhBkNQZld/aFwH2/nXFTptjgbh9Z6AcAvjQ02zAGJkVjhvz0I5Q9foXUI8tr0l8ef+tQd7Ag6w+Grb2RF7NkJooxzd9iJ4Ir1g2avztA/S3dNZy08Ez8H/AtDdpkUUMDqiL13Q3bt9mNGj57mSCAxCThzXrVTgYc7ueUMlRlNKwRGGQll5H+CmWMiOMy9TBfme/Smu572Kwa0FUMpIYmyzZ/fEqKOMl/8Q8EHeEDHnHJUy7x0Az/pB93Yaiz6b7GNe5my29mo4doNIbnlB3WSiUGxGOsEhqtWXltgPtCOAo4zfyDhpoNsAS3MgWoTg3TQ8s5+iERTXCF4awE3gY9kNOVKgIv1VY4vJ23T2rc6Y1wuqc2X+0DYxWHJST8tUbjCbQC1L/N/MA01QdymE2AZEZaAgE8IIr5U7fnTFVb6Bm4OSw3P3oWXZJ'}));
+form.append($('<input>', {type:'hidden', name:'request_date', value:'20220225115544'}));
+form.append($('<input>', {type:'hidden', name:'limit_second', value:'600'}));
+form.append($('<input>', {type:'hidden', name:'sps_hashcode', value:'0817667d4d15161dafa69688febf83bb242fdae2'}));
+                var saveCharset = document.charset;
+                document.charset = 'Shift_JIS';
+                form.submit();
+                document.charset = saveCharset;
+            }
+            $(function() {
+                feppost_20220225115544();
+                console.log('da submit')
+            });
+        </script>
+    </body>
+</html>
